@@ -26,7 +26,7 @@ def lambda_handler(event, context):
 
     # Format dynamodb response into an integer
     responseBody = json.dumps(
-        int(ddResponse['Attributes']['visitors']['N'])
+        {"visitorCount": int(ddResponse['Attributes']['visitors']['N'])}
     )
 
     # Create api response object
