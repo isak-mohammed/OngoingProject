@@ -25,23 +25,7 @@
    <!-- Script
    ================================================== -->
    <script src="js/modernizr.js"></script>
-   <script src="main.js"></script>
-   <script>
-    var xhr = new XMLHttpRequest();
-
-    xhr.open('GET', ' https://qp7jrydgol.execute-api.eu-west-2.amazonaws.com/Prod/visitor-count/', true);
-
-    xhr.onload = function () {
-      if (xhr.readyState === xhr.DONE) {
-        if (xhr.status === 200) {
-          document.getElementById("visitor-count").innerHTML = '&nbsp;&nbsp;' + ':&nbsp;&nbsp;' +xhr.responseText ;
-
-        }
-      }
-    };
-
-    xhr.send(null);
-  </script>
+   <script src="js/main.js"></script>
 
    <!-- Favicons
 	================================================== -->
@@ -64,6 +48,7 @@
             <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
             <li><a class="smoothscroll" href="#about">About</a></li>
 	         <li><a class="smoothscroll" href="#resume">Projects & Education</a></li>
+            
          </ul> <!-- end #nav -->
 
       </nav> <!-- end #nav-wrap -->
@@ -72,7 +57,7 @@
          <div class="banner-text">
             <h1 class="responsive-headline">Hi, I'm Isak</h1>
             
-            <p>and this page has been viewed <a id="visitor-count"></a> times :) </p> 
+            <p>and this page has been viewed <a id="counter"></a> times :) </p> 
             <ul class="social">
                <li><a href="https://www.linkedin.com/in/isak-mohammed-10251211b/"><i class="fa fa-linkedin"></i></a></li>
                <li><a href="https://github.com/isak-mohammed"><i class="fa fa-github"></i></a></li>
@@ -350,7 +335,7 @@
 
    </section> <!-- Resume Section End-->
 
-
+   
    <!-- footer
    ================================================== -->
    <footer>
