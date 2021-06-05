@@ -5,7 +5,7 @@ import os
 
 def lambda_handler(event, context):
     '''
-    Updates the DynamoDB entry with with the website name as the primary key by one
+    Updates the DynamoDB entry with with the website name as the primary key 
     If the key exists, it increases by one
     If it does not exist, it creates it and adds one
     '''
@@ -24,7 +24,7 @@ def lambda_handler(event, context):
         ReturnValues="UPDATED_NEW"
     )
 
-    # Format dynamodb response into an integer
+    # Format dynamodb response into variable visitorCount
     responseBody = json.dumps(
         {"visitorCount": int(ddResponse['Attributes']['visitors']['N'])}
     )
