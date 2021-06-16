@@ -90,7 +90,7 @@
 
             <h2>ABOUT ME</h2>
 
-            <p> Hi, I'm Isak Mohammed, Highly skilled and motivated Cloud enthusiast, with over 14x years of customer service experience looking for opportunities as a Cloud Engineer, Cloud Solution Architect or Junior DevOps Engineer. 
+            <p> Hi, I'm Isak Mohammed, Skilled and motivated Cloud enthusiast, with over 14x years of client and project management experience looking for opportunities as a Cloud Engineer, Cloud Solution Architect or Junior DevOps Engineer. 
                
          </br>
       </br>
@@ -117,10 +117,25 @@
 
                <div class="twelve columns">
 
-                  <h3>Serverless Personal website with view counter using AWS</h3>
+                  <h3>Created CICD pipeline using Jenkins, Nexus, SonarQube and Elastic Beanstalk environment on AWS</h3>
+                  <li>Integrated Jenkins with GitHub, Nexus, Sonarqube, slack and Elastic beanstalk Environment</li>
+                  <li>Used Maven to build Java Web application and Nexus server to host dependencies for Maven</li>
+                  <li>Created quality gates in SonarQube dashboard and enforced it in the pipeline to fail the builds when conditions were not met</li>
+                  <li>Once the code passed unit, Integration tests and SonarQube quality gates then well tested artifact with build version was stored in Nexus Repository</li>
+                  <li>Deployed tested artifact to staging Elastic Beanstalk environment, conducted performance tests on staging environment by adding Windows server as node to Jenkins server</li>
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Deployed serverless website with view counter on AWS and created CICD pipeline using GitHub actions</h3>
                   <li>Hosted a responsive personal wesite in AWS using S3, CloudFront, Lambda, DynamoDB and API gateway</li>
-                  <li>Frontend consist of S3 to deploy a static content and CloudFront to implement HTTPS and OAI  </li>
-                  <li>Backend provides website visitor counter and implemented it using API gateway, Lambda function and DynamoDB. Automated the entire backend using AWS Serverless Application Model (SAM)</li>
+                  <li>Frontend consist of S3- to store a static content and CloudFront- to implement HTTPS and OAI </li>
+                  <li>Backend provides website visitor counter and comprises API gateway, Lambda function and DynamoDB</li>
+                  <li>Automated the entire backend using AWS Serverless Application Model (SAM)</li>
                   <li>Created CI/CD pipeline with GitHub actions</li>
                </div>
 
@@ -130,24 +145,10 @@
 
                <div class="twelve columns">
 
-                  <h3>Serverless Personal website with view counter using AWS</h3>
-                  <li>Hosted a responsive personal wesite in AWS using S3, CloudFront, Lambda, DynamoDB and API gateway</li>
-                  <li>Frontend consist of S3 to deploy a static content and CloudFront to implement HTTPS and OAI  </li>
-                  <li>Backend provides website visitor counter and implemented it using API gateway, Lambda function and DynamoDB. Automated the entire backend using AWS Serverless Application Model (SAM)</li>
-                  <li>Created CI/CD pipeline with GitHub actions</li>
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Automated deployment of highly available infrastructure for webstack on AWS using Terraform</h3>
-                  <li>Hosted a responsive personal wesite in AWS using S3, CloudFront, Lambda, DynamoDB and API gateway</li>
-                  <li>Frontend consist of S3 to deploy a static content and CloudFront to implement HTTPS and OAI  </li>
-                  <li>Backend provides website visitor counter and implemented it using API gateway, Lambda function and DynamoDB. Automated the entire backend using AWS Serverless Application Model (SAM)</li>
-                  <li>Created CI/CD pipeline with GitHub actions</li>
+                  <h3>Automated deployment of highly available infrastructure for Java based web application on AWS using Terraform</h3>
+                  <li>Configured Terraform state for the infrastructure on Amazon S3</li>
+                  <li>Deployed VPC using Terraform modules</li>
+                  <li>Launched frontend and backend services in private subnets and only web facing ALB in public subnet</li>
                </div>
 
             </div> <!-- item end -->
@@ -159,7 +160,8 @@
                   <h3>Deployed highly available Web Application using Amazon Elastic Beanstalk, Amazon MQ, Elastic Cache and Amazon RDS</h3>
                   <li>Created custom VPC with 3x Public subnets and 3x private subnets</li>
                   <li>Provisioned Multi-AZ MySQL using RDS service, 2xnode Memcached cluster using Elastic Cache, Active/Standby ActiveMq message broker using Amazon MQ service in private subnets of custom VPC </li>
-                  <li>Using Elastic Beanstalk deployed tomcat ec2 instances in Auto Scaling Group (ASG), ALB</li>
+                  <li>Using Elastic Beanstalk deployed ALB and tomcat ec2 instances in Auto Scaling Group (ASG)</li>
+                  <li>Uploaded build artificact into Elastic Beanstalk environment</li>
                   <li>Added Elastic Beanstalk environment end point as CNAME in the domain provider dns setting to divert the traffic to ALB, So, that users can use meaningful URL to reach our application. And update the same URL in Cloud Front to be distributed using CDN</li>
    
                </div>
@@ -172,9 +174,9 @@
 
                   <h3>Provisioned a Web application stack on AWS using EC2</h3>
                   <li>Deployed Web application using Amazon EC2 instances, Route53, Application Load balancer (ALB) and Amazon Certificate Manager (ACM)</li>
-                  <li>Backend consists of RabbitMQ, Memcached, Mariadb and Tomcat instance in frontend. Deployed Tomcat, RabbitMQ, Memcached, Mariadb instances with user-data scripts (bash).</li>
+                  <li>Backend consists of RabbitMQ, Memcached, Mariadb and frontend consists of Tomcat instance. Deployed Tomcat, RabbitMQ, Memcached, Mariadb instances with user-data scripts (bash).</li>
                   <li>Created a private hosted zone in Route53 to map the names of backend services to ip address of the instances so that frontend can interact with backend services  </li>
-                  <li>Assigned appropriate IAM roles to Tomcat instance to access the build artifact from s3)</li>
+                  <li>Assigned appropriate IAM role to Tomcat instance to access the build artifact from s3</li>
                   <li>Configured Application Load Balancer (ALB) with HTTPS using certificate from Amazon Certificate Manager (ACM) and then mapped ALB endpoint to custom domain name</li>
                
                </div>
