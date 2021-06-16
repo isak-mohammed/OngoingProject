@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded',(event)=>{   /*when contenet gets loa
 })
 
 /*Defining the constant to store the APIGW url*/
-const functionApi = 'https://u981tdm8u1.execute-api.eu-west-2.amazonaws.com/Prod/visitor-count/';
+const functionApi = 'https://ivrt95w0u3.execute-api.eu-west-2.amazonaws.com/Prod/visitor-count/';
 
 /*JS function to grab the correct part of JSON provided by API and display in index.html */
 const getVisitCount = () => {
