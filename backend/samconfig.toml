@@ -3,8 +3,8 @@ version = 0.1
 [default.deploy]
 [default.deploy.parameters]
 stack_name = "sam-app"
-s3_bucket = "isak-resume-sam-bucket"
+s3_bucket = "isak-sam-bucket"
 s3_prefix = "sam-app"
-region = "eu-west-2"
+region = "us-east-1"
 confirm_changeset = false
 capabilities = "CAPABILITY_IAM"
